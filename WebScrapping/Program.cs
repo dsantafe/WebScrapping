@@ -448,9 +448,9 @@
 
         try
         {
-            using SqlCommand deleteCmd = new("DELETE FROM reporte WHERE medicamento = @medicamento", conn, transaction);
-            deleteCmd.Parameters.AddWithValue("@medicamento", busqueda);
-            deleteCmd.ExecuteNonQuery();
+            //using SqlCommand deleteCmd = new("DELETE FROM reporte WHERE medicamento = @medicamento", conn, transaction);
+            //deleteCmd.Parameters.AddWithValue("@medicamento", busqueda);
+            //deleteCmd.ExecuteNonQuery();
 
             foreach (var medicamento in reporte)
             {
